@@ -152,7 +152,7 @@ class ConTrader(tpqoa.tpqoa):
         
 if __name__ == "__main__":
         
-    trader = ConTrader(r"C:\Users\Gaurav Aryal\TestProjects\PythonProjects\UdemyAlgoTrading\Part4_Materials\Part4_Materials\Oanda\oanda.cfg", "EUR_USD", "1min", window = 1, units = 100000)
+    trader = ConTrader(r"C:\Users\Gaurav Aryal\Oanda\oanda.cfg", "EUR_USD", "1min", window = 1, units = 100000)
     trader.get_most_recent()
     #trader.stream_data(trader.instrument, stop = 100)
     trader.start_trading(days = 5, max_attempts =  3, wait = 20, wait_increase = 0)
